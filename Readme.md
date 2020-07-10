@@ -56,7 +56,7 @@ RecipePuppy API
 
 ### Trello
 
-[Trello Kanban board](https://trello.com/b/WZAxk1LV)
+[Trello Kanban board](https://trello.com/b/1gBg8hdY/lavieingreen)
 
 ### Github
 
