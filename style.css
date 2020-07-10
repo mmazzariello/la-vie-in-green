@@ -18,8 +18,12 @@ h1 {
   text-align: center;
 }
 
+h2{
+  font-weight: bold;
+}
+
 h3 {
-  color: #a2b290;
+  font-weight: bold;
 }
 
 nav ul {
@@ -44,17 +48,25 @@ header {
   align-items: center;
 }
 
-
 .container-section {
   padding: 40px 40px 0px 40px;
-  font-size: 22px; 
+  height: 300px;
+  text-align: center;
 }
 
-.about-us-Image {
-  background-image: url("images/timj-ots0EOYuGtU-unsplash.jpg");
-  background-size: cover;
-  height: 490px;
-  width: 100%;
-  /* color: white; */
-  padding-top: 0px;
-} 
+.about-us {
+  background-color: #b4b6b32c;
+  padding: 40px;
+  height: 300px;
+  text-align: center;
+}
+
+.foot-design {
+background-color: #a2b290;
+color: white;
+height: 200px;
+padding: 40px;
+font-size: 22px; 
+text-align: center;
+}
+
