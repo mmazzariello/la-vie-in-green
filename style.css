@@ -44,11 +44,17 @@ header {
   align-items: center;
 }
 
+
+.container-section {
+  padding: 40px 40px 0px 40px;
+  font-size: 22px; 
+}
+
 .about-us-Image {
-  background-image: url("");
+  background-image: url("images/timj-ots0EOYuGtU-unsplash.jpg");
   background-size: cover;
   height: 490px;
   width: 100%;
-  color: white;
-  padding-top: 340px;
-}
+  /* color: white; */
+  padding-top: 0px;
+} 
