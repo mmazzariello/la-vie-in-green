@@ -3,11 +3,11 @@
 /* body {
   background-color: red;
 } */
-/* 
-* {
+
+/* * {
   margin: 0;
   padding: 0;
-} */
+}  */
 
 .debug {
   outline: 1px dotted red;
@@ -15,53 +15,95 @@
 
 body {
   font-family: Montserrat;
+  background-color: #fffffa;
 }
 
-h1 {
-  color: #a2b290;
+header {
+  width: 100%;
+}
+
+header nav {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #a2b290;
+}
+
+.menu_bar {
+  display: none;
+}
+
+ul {
+  overflow: hidden;
+  list-style: none;
+}
+
+li {
+  float: left;
+}
+
+header nav ul li a {
+  color: #fff;
   padding: 20px;
-  text-align: center;
+  text-decoration: none;
+  display: block;
 }
 
-h2{
-  font-weight: bold;
+header nav ul li a:hover {
+  background-color: rgb(172, 204, 172);
 }
 
+section {
+  padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  header nav {
+    width: 80%;
+    height: 100%;
+    left:-100%;
+    margin: 0;
+    position: fixed;
+  }
+
+  header nav ul li {
+    display: block;
+    float: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .menu_bar {
+    display: block;
+    width: 100%;
+    background: #ccc;
+  }
+
+  .menu_bar .btn-menu {
+    display: block;
+    padding: 20px;
+    background: #a2b290;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .menu_bar span {
+    float: right;
+  }
+}
+
+
+h2,
 h3 {
   font-weight: bold;
 }
 
-
-/* header nav ul li a {
-  color: #a2b290;
-  padding: 20px;
-  text-decoration: none;
-  display: block;
-} */
-
-header nav ul li a:hover {
-background-color: teal;
-}
-
-/* header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-} */
-
-/* nav ul {
-  list-style-type: none;
-  display: flex; 
- }
-
-nav li {
-  padding: 0px 30px 0px 0px ;
-  text-decoration: none;
-  font-size: 18px;
-} */
-
-.carouse-style{
-height: 400;
+.carouse-style {
+  height: 400;
 }
 
 .container-section {
@@ -77,12 +119,12 @@ height: 400;
 }
 
 .foot-design {
-background-color: #a2b290;
-color: white;
-height: 200px;
-padding: 40px;
-font-size: 22px; 
-text-align: center;
+  background-color: #a2b290;
+  color: white;
+  height: 200px;
+  padding: 40px;
+  font-size: 22px;
+  text-align: center;
 }
 
 .container {
@@ -101,7 +143,7 @@ text-align: center;
   align-items: center;
 }
 
-#general-information, p {
-text-align: center;
+#general-information,
+p {
+  text-align: center;
 }
-
