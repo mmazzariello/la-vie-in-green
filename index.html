@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -16,8 +16,7 @@
   <body>
     <!-- NAVBAR -->
     <header>
-      <h1>la vie in green</h1>
-      <nav class="nav-bar">
+      <nav>
         <ul>
           <a href="signUp.html"><li>Sign In</li></a>
           <a href="login.html"><li>Log In</li></a>
@@ -28,6 +27,7 @@
 
     <!-- SECTION 1 / HEADER-->
     <main>
+      <div class= "carouse-style">
       <div
         id="carouselExampleSlidesOnly"
         class="carousel slide"
@@ -51,25 +51,34 @@
           </div>
         </div>
       </div>
-
+    </div>
       <!-- SECTION 2 -->
 
       <div class="container-section">
         <p>REAL FOOD REAL PEOPLE</p>
-        <h2>What is the taste?</h2>
-        <p>Discover our menu</p>
       </div>
 
       <!-- SECTION 3 -->
-      <div class="about-us">
-        <!-- <div class="appleImage"> -->
-        <h3>ABOUT US</h3>
-        <p>
-          La vie in green is an informal community-focused website offers
-          healthy and delicious food inspired by plant-based food.
-        </p>
-        <!-- </div> -->
-      </div>
+     
+      <section id="general-information" class="about-us">
+
+        <article class="container">
+          <h4>What' s the taste?</h4>
+          <p class="text"> Discover our menu</p>
+        </article>
+
+        <article class="container">
+          <h4>About us</h4>
+          <p class="text"> La vie in green is an informal community-focused website offering delicious plant-based foods.</p>
+        </article>
+       
+        <article class="container">
+          <h4>Wanna Join?</h4>
+          <p class="text"> Join our recipe program to feel healthy while learning</p>
+        </article>
+     
+      </section>
+
 
       <!-- FOOTER -->
 
