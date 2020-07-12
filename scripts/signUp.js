@@ -13,16 +13,55 @@ class Signup {
   }
 
   // gestionar cambios del input "email"
-  handleEmailInput = (event) => {};
+  handleEmailInput = (event) => {
+    const email = event.target.value;
+
+    console.log("email", email);
+
+    //validar el texto del input email
+  };
 
   // gestionar cambios del input "password"
-  handleEmailInput = (event) => {};
+  handlePasswordInput = (event) => {
+    const password = event.target.value;
+
+    console.log("password", password);
+
+    //validar el texto del input password
+  };
 
   // gestionar cambios del input "repeat-password"
-  handleRepeatPasswordInput = (event) => {};
+  handleRepeatPasswordInput = (event) => {
+    const repeatpassword = event.target.value;
+
+    console.log("repeatpassword", repeatpassword);
+
+    //validar el texto del input repeatpassword
+  };
 
   // gestionar cambios del envio de datos (submit)
-  saveData = (event) => {};
+  saveData = (event) => {
+//recoger los valores de casa input
+
+    const email = this.emailInput.value;
+    const password = this.passwordInput.value;
+    const repeatPassword = this.repeatPasswordInput.value;
+
+
+const newUser = createUser(email, password, repeatpassword);
+
+// pseudogodigo
+
+// queremos guardar el nuevo usr en la base de datos (simulada)
+// database.createNewUser (newUser);
+
+//vaciar el formulario
+
+this.emailInput.value = "";
+this.passwordInput.value = "";
+this.repeatPasswordInput.value = "";
+
+  };
 
   //funcion auxiliar para registrar todos los eventos
   addListeners = () => {
@@ -41,4 +80,3 @@ class Signup {
 const signup = new Signup();
 
 window.addEventListener("load", signup.addListeners);
-
