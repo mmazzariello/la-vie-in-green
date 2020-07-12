@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?tc7q2y');
-  src:  url('fonts/icomoon.eot?tc7q2y#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?tc7q2y') format('truetype'),
-    url('fonts/icomoon.woff?tc7q2y') format('woff'),
-    url('fonts/icomoon.svg?tc7q2y#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?smuww3');
+  src:  url('fonts/icomoon.eot?smuww3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?smuww3') format('truetype'),
+    url('fonts/icomoon.woff?smuww3') format('woff'),
+    url('fonts/icomoon.svg?smuww3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-redo2:before {
+  content: "\e968";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-cog:before {
+  content: "\e994";
+}
 .icon-menu:before {
   content: "\e9bd";
+}
+.icon-mail4:before {
+  content: "\ea86";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-svg:before {
+  content: "\eae9";
 }
