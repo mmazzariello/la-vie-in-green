@@ -52,11 +52,6 @@
   background-color: red;
 } */
 
-{
-  margin: 0;
-  padding: 0;
-}  
-
 .debug {
   outline: 1px dotted red;
 }
@@ -148,6 +143,22 @@ section {
   .menu_bar span {
     float: right;
   }
+}
+
+.inicial-image {
+  background-image: url(../images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg);
+  background-size: cover;
+  height: 490px;
+  width: 100%;
+  color: white;
+  padding-top: 200px;
+}
+
+.inicial-text {
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 40px;
 }
 
 h2,
