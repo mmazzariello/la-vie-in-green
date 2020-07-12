@@ -48,7 +48,7 @@ class Signup {
     const repeatPassword = this.repeatPasswordInput.value;
 
 
-const newUser = createUser(email, password, repeatpassword);
+const newUser = new User(email, password);
 
 // pseudogodigo
 
@@ -56,7 +56,6 @@ const newUser = createUser(email, password, repeatpassword);
 // database.createNewUser (newUser);
 
 //vaciar el formulario
-
 this.emailInput.value = "";
 this.passwordInput.value = "";
 this.repeatPasswordInput.value = "";
