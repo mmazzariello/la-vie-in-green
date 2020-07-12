@@ -57,7 +57,6 @@ section {
   padding: 20px;
 }
 
-
 .inicial-image {
   background-image: url(../images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg);
   background-size: cover;
@@ -97,7 +96,8 @@ h3 {
 }
 
 #general-information {
-  display: flex; 
+  display: flex;
+  color: rgb(83, 80, 80);
 }
 
 #general-information .container {
@@ -118,7 +118,7 @@ h3 {
   header nav ul li {
     display: block;
     float: none;
-    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   .menu_bar {
@@ -152,8 +152,7 @@ h3 {
   p {
     font-size: 1rem;
   }
-
-  }
+}
 
 .foot-design {
   background-color: #a2b290;
@@ -163,3 +162,171 @@ h3 {
   font-size: 22px;
   text-align: center;
 }
+
+/* SIGN IN STYLE */
+
+body {
+  font-family: Montserrat;
+  background-color: #fffffa;
+}
+
+header {
+  width: 100%;
+}
+
+header nav {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #a2b290;
+}
+
+.menu_bar {
+  display: none;
+}
+
+header nav ul {
+  overflow: hidden;
+  list-style: none;
+}
+
+header nav ul li {
+  float: right;
+}
+
+header nav ul li a {
+  color: #fff;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+header nav ul li span {
+  margin-right: 10px;
+}
+
+header nav ul li a:hover {
+  background-color: rgb(172, 204, 172);
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+.inicial-image {
+  background-image: url(../images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg);
+  background-size: cover;
+  height: 490px;
+  width: 100%;
+  color: white;
+  padding-top: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+  }
+
+  header nav ul li {
+    display: block;
+    float: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .menu_bar {
+    display: block;
+    width: 100%;
+    background: #ccc;
+    z-index: 10;
+  }
+
+  .menu_bar .btn-menu {
+    display: block;
+    padding: 20px;
+    background: #a2b290;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .menu_bar span {
+    float: right;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.form-register {
+width: 400px;
+background-color: #a2b290;
+padding: 30px;
+margin: auto;
+margin-top: 100px;
+border-radius: 4px;
+font-size: 14px;
+color: white;
+font-weight: bold;
+box-shadow: 7px 13px 37px grey;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.controls {
+  width: 100%;
+  padding: 10px;
+border-radius: 4px;
+margin-bottom: 16px;
+border: 1px solid #a2b290;
+font-size: 14px;
+color: rgb(131, 125, 125);
+}
+
+.form-register p {
+height: 40px;
+text-align: center; 
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .botton {
+  width: 100%;
+  background: rgb(131, 125, 125);
+  border: none;
+  padding: 10px;
+  color: white;
+  margin: 16px;
+  font-size: 14px;
+  margin-bottom: 18px;
+  border-radius: 4px;
+  border: 1px solid #a2b290;
+}
+ 
+footer {
+  margin-top: 50px;
+} 
