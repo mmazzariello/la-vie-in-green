@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 // form, inputs y message container
 
@@ -16,51 +16,63 @@ class Signup {
   handleEmailInput = (event) => {
     const email = event.target.value;
 
-    console.log("email", email);
-
     //validar el texto del input email
+    validator.validateValidEmail(email);
+
+    const errors = validator.getErrors();
+
+    //si el nombre del email es valido
+    if (!errors.invalidEmailError) {
+      //comprueba si el email es unico
+      validator.validateUniqueEmail(email);
+    }
+
+    this.setErrorMessages();
   };
 
   // gestionar cambios del input "password"
   handlePasswordInput = (event) => {
     const password = event.target.value;
-
-    console.log("password", password);
+    const passwordRepeat = this.repeatPasswordInput.value;
 
     //validar el texto del input password
-  };
+    validator.validatePassword(password);
+    validator.validatePasswordRepeat(password, passwordRepeat);
+
+    this.setErrorMessages();
+    };
 
   // gestionar cambios del input "repeat-password"
   handleRepeatPasswordInput = (event) => {
-    const repeatpassword = event.target.value;
+    const passwordRepeat = event.target.value;
+    const password = this.passwordInput.value;
 
-    console.log("repeatpassword", repeatpassword);
-
+    //validar el texto del input password
     //validar el texto del input repeatpassword
-  };
+    validator.validatePassword(password);
+    validator.validatePasswordRepeat(password, passwordRepeat);
+
+    this.setErrorMessages();
+    };
 
   // gestionar cambios del envio de datos (submit)
   saveData = (event) => {
     //Cuando el evento ocurre, lo cancela y no recarga la pagina
     event.preventDefault();
-//recoger los valores de casa input
+    //recoger los valores de casa input
     const email = this.emailInput.value;
     const password = this.passwordInput.value;
     const repeatPassword = this.repeatPasswordInput.value;
 
+    const newUser = new User(email, password);
 
-const newUser = new User(email, password);
+    // queremos guardar el nuevo usr en la base de datos (simulada)
+    db.saveNewUser(newUser);
 
-// queremos guardar el nuevo usr en la base de datos (simulada)
-  db.saveNewUser (newUser);
-
-
-
-//vaciar el formulario
-this.emailInput.value = "";
-this.passwordInput.value = "";
-this.repeatPasswordInput.value = "";
-
+    //vaciar el formulario
+    this.emailInput.value = "";
+    this.passwordInput.value = "";
+    this.repeatPasswordInput.value = "";
   };
 
   //funcion auxiliar para registrar todos los eventos
@@ -74,6 +86,24 @@ this.repeatPasswordInput.value = "";
 
     this.buttonInput.addEventListener("click", this.saveData);
   };
+
+  setErrorMessages = () => {
+    //vacia los errores para que no se sumen
+    this.errorsWrapper.innerHTML = "";
+
+    const errorsObj = validator.getErrors();
+
+    //convertir el objeto con errores a un array de strings
+const errorsStringsArr = Object.values(errosObj);
+
+errorsStringsArr.forEach((errorStr) => { 
+  const errorMessageP = document.createElement('p');
+  errorMessageP.innerHTML = errorStr;
+
+  this.errorsWrapper.appendChild(errorMessageP);
+})
+
+  }
 }
 
 // Crear una nueva instancia del Signup (objeto)

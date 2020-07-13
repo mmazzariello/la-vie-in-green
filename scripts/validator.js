@@ -81,7 +81,7 @@ class Validator {
       // si los 2 passwords coincidem quita el error
       delete this.errors.repeatPasswordError;
     } else {
-    //si no coinciden, poner el mensaje
+      //si no coinciden, poner el mensaje
       this.errors.repeatPasswordError = this.repeatPasswordError;
     }
   };
@@ -97,10 +97,8 @@ class Validator {
       invalidEmailError: this.invalidEmailError,
       passwordError: this.passwordError,
       repeatPasswordError: this.repeatPasswordError,
-    }
-  }
-
-  
+    };
+  };
 }
 
 const validator = new Validator();
