@@ -41,6 +41,13 @@ class Login {
       message.innerHTML = `The email or password are incorrect`;
     }
     this.messageContainer.appendChild(message);
+
+    if (user) this.redirect();
+  };
+
+  redirect = () => {
+    setTimeout(() => location.assign("indexII.html"), 2000)
+    
   };
 }
 
