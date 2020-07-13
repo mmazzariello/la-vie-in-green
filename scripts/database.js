@@ -6,7 +6,7 @@ class Database {
     //recuperar el string
     const usersStr = localStorage.getItem("users");
     //convertir el string a un array
-    const usersArr = JSON.parse(userStr);
+    const usersArr = JSON.parse(usersStr);
 
     //si todavia no hay usuarios, devuelve el array vacio
     if (usersArr === null) {

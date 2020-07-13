@@ -41,8 +41,9 @@ class Signup {
 
   // gestionar cambios del envio de datos (submit)
   saveData = (event) => {
+    //Cuando el evento ocurre, lo cancela y no recarga la pagina
+    event.preventDefault();
 //recoger los valores de casa input
-
     const email = this.emailInput.value;
     const password = this.passwordInput.value;
     const repeatPassword = this.repeatPasswordInput.value;
@@ -50,10 +51,10 @@ class Signup {
 
 const newUser = new User(email, password);
 
-// pseudogodigo
-
 // queremos guardar el nuevo usr en la base de datos (simulada)
-// database.createNewUser (newUser);
+  db.saveNewUser (newUser);
+
+
 
 //vaciar el formulario
 this.emailInput.value = "";
