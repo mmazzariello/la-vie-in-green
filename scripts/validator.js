@@ -11,7 +11,6 @@ class Validator {
     //objeto con los errores que van a ser mostrados a los usuarios
     this.errors = {
       invalidEmailError: this.invalidEmailError,
-      emailExistsError: this.emailExistsError,
       passwordError: this.passwordError,
       repeatPasswordError: this.repeatPasswordError,
     };
@@ -79,8 +78,10 @@ class Validator {
   //validar si el password coincide con repeat password
   validatePasswordRepeat = (password, passwordRepeat) => {
     if (password === passwordRepeat) {
+      // si los 2 passwords coincidem quita el error
       delete this.errors.repeatPasswordError;
     } else {
+    //si no coinciden, poner el mensaje
       this.errors.repeatPasswordError = this.repeatPasswordError;
     }
   };
@@ -90,8 +91,16 @@ class Validator {
     return this.errors;
   };
 
-  //reiniciar los errores mostrados
-  resetValidator = () => {};
+  //reiniciar los errores mostrados, para el proximo Signup
+  resetValidator = () => {
+    this.errors = {
+      invalidEmailError: this.invalidEmailError,
+      passwordError: this.passwordError,
+      repeatPasswordError: this.repeatPasswordError,
+    }
+  }
+
+  
 }
 
 const validator = new Validator();
