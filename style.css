@@ -113,13 +113,117 @@ h3 {
   width: 240px;
 }
 
-@media screen and (max-width: 576px) {
-  h1 {
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    padding-top: 0px;
+@media screen and (max-width: 768px) {
+  header nav {
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
   }
+
+  header nav ul li {
+    display: block;
+    float: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .menu_bar {
+    display: block;
+    width: 100%;
+    background: #ccc;
+    z-index: 10;
+  }
+
+  .menu_bar .btn-menu {
+    display: block;
+    padding: 20px;
+    background: #a2b290;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .menu_bar span {
+    float: right;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.foot-design {
+  background-color: #a2b290;
+  color: white;
+  height: 180px;
+  padding: 40px;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* SIGN IN STYLE */
+
+body {
+  font-family: Montserrat;
+  background-color: #fffffa;
+}
+
+header {
+  width: 100%;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+header nav {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #a2b290;
+}
+
+.menu_bar {
+  display: none;
+}
+
+header nav ul {
+  overflow: hidden;
+  list-style: none;
+}
+
+header nav ul li {
+  float: right;
+}
+
+header nav ul li a {
+  color: #fff;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+header nav ul li span {
+  margin-right: 10px;
+}
+
+header nav ul li a:hover {
+  background-color: rgb(172, 204, 172);
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -167,34 +271,7 @@ h3 {
   p {
     font-size: 1rem;
   }
-
-  #general-information {
-    width: 100%;
-    flex-direction: column;
-    color: rgb(83, 80, 80);
-  }
-
-  #general-information .container {
-    width: 240px;
-    padding: 22px;
-  }
-
-  .foot-design {
-    margin-top: 10px;
-    background-color: #a2b290;
-  }
 }
-
-.foot-design {
-  background-color: #a2b290;
-  color: white;
-  height: 180px;
-  padding: 40px;
-  font-size: 22px;
-  text-align: center;
-}
-
-/* SIGN UP STYLE !!!!!!!!!!!!!!!!!!!!!!!!!!*/ 
 
 .form-register {
   display: flex;
@@ -256,13 +333,8 @@ h3 {
   border: 1px solid #a2b290;
 }
 
-.footer-design {
-  background-color: #a2b290;
-  color: white;
-  height: 180px;
-  padding: 40px;
-  font-size: 22px;
-  text-align: center;
+footer {
+  margin-top: 50px;
 }
 
 /* LOGIN */
