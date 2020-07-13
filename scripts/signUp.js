@@ -9,7 +9,7 @@ class Signup {
     this.repeatPasswordInput = document.querySelector("#repeat-password");
 
     this.buttonInput = document.querySelector("#signup-button");
-    this.errorsWrapper = document.querySelector("#message-container");
+    this.errorsWrapper = document.querySelector(".message-container");
   }
 
   // gestionar cambios del input "email"
@@ -73,6 +73,9 @@ class Signup {
     this.emailInput.value = "";
     this.passwordInput.value = "";
     this.repeatPasswordInput.value = "";
+
+this.showSuccessMessage();
+
   };
 
   //funcion auxiliar para registrar todos los eventos
@@ -87,6 +90,26 @@ class Signup {
     this.buttonInput.addEventListener("click", this.saveData);
   };
 
+showSuccessMessage = () => {
+// vacia los errores para que no se sumen
+this.errorsWrapper.innerHTML = "";
+
+const errorsObj = validator.getErrors();
+//convertir el objeto a un array de strings
+const errorsStringsArr = Object.values(errorsObj);
+
+if (errorsStringsArr.length > 0) {
+  return;
+}
+
+const successMessageP = document.createElement('p');
+successMessageP.innerHTML = "The account has been created successfully";
+
+this.errorsWrapper.appendChild(successMessageP);
+
+}
+
+
   setErrorMessages = () => {
     //vacia los errores para que no se sumen
     this.errorsWrapper.innerHTML = "";
@@ -94,7 +117,7 @@ class Signup {
     const errorsObj = validator.getErrors();
 
     //convertir el objeto con errores a un array de strings
-const errorsStringsArr = Object.values(errosObj);
+const errorsStringsArr = Object.values(errorsObj);
 
 errorsStringsArr.forEach((errorStr) => { 
   const errorMessageP = document.createElement('p');
