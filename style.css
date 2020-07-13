@@ -113,6 +113,15 @@ h3 {
   width: 240px;
 }
 
+@media screen and (max-width: 576px) {
+  h1 {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding-top: 0px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   header nav {
     width: 80%;
@@ -158,6 +167,18 @@ h3 {
   p {
     font-size: 1rem;
   }
+
+  #general-information {
+    width: 100%;
+    flex-direction: column;
+    color: rgb(83, 80, 80);
+  }
+
+  #general-information .container {
+    width: 240px;
+    padding: 22px;
+  }
+
 }
 
 .foot-design {
