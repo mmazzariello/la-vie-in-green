@@ -40,7 +40,7 @@ class Signup {
     validator.validatePasswordRepeat(password, passwordRepeat);
 
     this.setErrorMessages();
-    };
+  };
 
   // gestionar cambios del input "repeat-password"
   handleRepeatPasswordInput = (event) => {
@@ -53,7 +53,7 @@ class Signup {
     validator.validatePasswordRepeat(password, passwordRepeat);
 
     this.setErrorMessages();
-    };
+  };
 
   // gestionar cambios del envio de datos (submit)
   saveData = (event) => {
@@ -74,8 +74,8 @@ class Signup {
     this.passwordInput.value = "";
     this.repeatPasswordInput.value = "";
 
-this.showSuccessMessage();
-
+    this.showSuccessMessage();
+    this.removeMessages();
   };
 
   //funcion auxiliar para registrar todos los eventos
@@ -90,25 +90,29 @@ this.showSuccessMessage();
     this.buttonInput.addEventListener("click", this.saveData);
   };
 
-showSuccessMessage = () => {
-// vacia los errores para que no se sumen
-this.errorsWrapper.innerHTML = "";
+  showSuccessMessage = () => {
+    // vacia los errores para que no se sumen
+    this.errorsWrapper.innerHTML = "";
 
-const errorsObj = validator.getErrors();
-//convertir el objeto a un array de strings
-const errorsStringsArr = Object.values(errorsObj);
+    const errorsObj = validator.getErrors();
+    //convertir el objeto a un array de strings
+    const errorsStringsArr = Object.values(errorsObj);
 
-if (errorsStringsArr.length > 0) {
-  return;
-}
+    if (errorsStringsArr.length > 0) {
+      return;
+    }
 
-const successMessageP = document.createElement('p');
-successMessageP.innerHTML = "The account has been created successfully";
+    const successMessageP = document.createElement("p");
+    successMessageP.innerHTML = "The account has been created successfully";
 
-this.errorsWrapper.appendChild(successMessageP);
+    this.errorsWrapper.appendChild(successMessageP);
+  };
 
-}
-
+  removeMessages = () => {
+    setTimeout (() => {
+      this.errorsWrapper.innerHTML = "";
+    }, 3000)
+  }
 
   setErrorMessages = () => {
     //vacia los errores para que no se sumen
@@ -117,16 +121,15 @@ this.errorsWrapper.appendChild(successMessageP);
     const errorsObj = validator.getErrors();
 
     //convertir el objeto con errores a un array de strings
-const errorsStringsArr = Object.values(errorsObj);
+    const errorsStringsArr = Object.values(errorsObj);
 
-errorsStringsArr.forEach((errorStr) => { 
-  const errorMessageP = document.createElement('p');
-  errorMessageP.innerHTML = errorStr;
+    errorsStringsArr.forEach((errorStr) => {
+      const errorMessageP = document.createElement("p");
+      errorMessageP.innerHTML = errorStr;
 
-  this.errorsWrapper.appendChild(errorMessageP);
-})
-
-  }
+      this.errorsWrapper.appendChild(errorMessageP);
+    });
+  };
 }
 
 // Crear una nueva instancia del Signup (objeto)
