@@ -699,17 +699,45 @@ h3 {
   text-align: center;
 }
 
+.form-choose {
+  /* padding-bottom: 1px; */
+}
+
 .ingredient-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  background-color: #a2b290;
+  padding: 30px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 1%;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  box-shadow: 7px 13px 37px grey;
+}
+
+.ingredient-form label {
+  padding-bottom: 25px;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .ingredients-list article {
   background-color: #a2b290;
-  max-width: 50%;
+  width: 300px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5px 10px;
-  margin: auto;
+  margin: 20px;
   margin-top: 5%;
   border-radius: 2%;
   font-size: 4rem;
@@ -732,13 +760,12 @@ h3 {
 }
 
 .ingredients-list h3 {
-align-items: center;
-font-weight: bold;
+  align-items: center;
+  font-weight: bold;
 }
 
-
 .dashboard-image {
-  background-image: url(../images/katka-pavlickova-_v1wbPxLTT8-unsplash.jpg);
+  background-image: url(../images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg);
   background-size: cover;
   height: 490px;
   width: 100%;
@@ -746,17 +773,31 @@ font-weight: bold;
   padding-top: 200px;
 }
 
+@media (min-width: 576px) {
+  .ingredients-list article {
+    /* font-size: 4rem;
+    min-height: 260px;
+    align-items: center;
+    justify-content: center; */
+  }
 
-@media screen and (max-width: 768px) {
+  .ingredients-list h3 {
+  font-size: 1rem;
+  }
+
+  .ingredients-list {
+    border: 2px solid yellow;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-
-
-
-
-
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
 }
 
-@media screen and (max-width: 992px) {
+@media (min-width: 992px) {
 }
