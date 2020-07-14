@@ -178,7 +178,6 @@ h3 {
     width: 240px;
     padding: 22px;
   }
-
 }
 
 .foot-design {
@@ -628,7 +627,6 @@ h3 {
 }
 
 @media screen and (max-width: 576px) {
-
   #faq-section3 {
     flex-direction: column;
   }
@@ -679,7 +677,7 @@ h3 {
   p {
     font-size: 1rem;
   }
-  
+
   #faq-section3 {
     flex-direction: column;
   }
@@ -697,17 +695,40 @@ h3 {
 /* DASHBOARD STYLE IS HEREEEEE */
 
 .ingredient-text {
-padding-top: 170px;
-text-align: center;
+  padding-top: 170px;
+  text-align: center;
 }
 
-.ingredient-form{
-
-}
-.ingredients-list article{
-background-color: red;
+.ingredient-form {
 }
 
-.ingredients-list article{
-  
+.ingredients-list article {
+  background-color: #a2b290;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 2%;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  box-shadow: 7px 13px 37px grey;
+}
+
+
+
+
+
+
+
+.ingredients-list article {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 992px) {
 }
