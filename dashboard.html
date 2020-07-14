@@ -2,16 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
+    <!-- NAVBAR HEADER-->
+    <header class="sticky">
+      <div class="nav-format">
+        <a href="#" class="menu_bar"><span class="icon-menu"></span> Menu</a>
+      </div>
 
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><span class="icon-home3"></span>Home</a>
+          </li>
+      </nav>
+    </header>
+
+
+    <!-- SECTION 1 -->
+
+    <main>
+      <section class="inicial-image">
+        <h3 class="ingredient-text">Choose your ingredient and enjoy</h3>
+      </section>
+
+      <!-- SECTION 2 ACA VA EL FORMULARIO CON LOS INGREDIENTES DE LAS RECETAS-->
+
+      <form class="ingredient-form" action="/action_page.php">
+        <label for="Ingredients">Choose an Ingredient:</label>
+        <select name="cars" id="cars">
+          <option value="Tomatoe">Tomatoe</option>
+          <option value="Broccoli">Broccoli</option>
+          <option value="Onion">Onion</option>
+          <option value="carrot">Carrot</option>
+          <option value="Zucchini">Zucchini</option>
+          <option value="Potatoe">Potatoe</option>
+          <option value="Spinach">Spinach</option>
+          <option value="Lettuce">Lettuce</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
 
       <div class="container">
-        <section class="ingredients-list">
-        </section>
+        <section class="ingredients-list"></section>
       </div>
+
+      <!-- FOOTER -->
+
+      <footer class="foot-design">
+        <h3>la vie in green</h3>
+        <span class="icon-instagram"></span>
+        <span class="icon-facebook"></span>
+      </footer>
     </main>
 
     <!-- JS -->
