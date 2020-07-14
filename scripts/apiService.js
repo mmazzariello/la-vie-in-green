@@ -6,9 +6,8 @@
 // const section = document.querySelector(".ingredient-list");
 
 const getRecipes = () => {
-  return fetch(
-    `http://www.recipepuppy.com/api/?i=tomato,broccoli,onion,carrot,zucchini,potato,spinach,lettuce`
-  )
+  return fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=tomato,broccoli,onion,carrot,zucchini,potato,spinach,lettuce`
+)
     .then((res) => res.json())
     .then((data) => {
       return data.results;
