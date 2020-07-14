@@ -1,6 +1,6 @@
 "use strict";
 
-function getIngredients() {
+// function getIngredients() {
   const getRecipes = () => {
     return fetch(
       `https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=tomato,broccoli,onion,carrot,zucchini,potato,spinach,lettuce`
@@ -23,14 +23,14 @@ function getIngredients() {
   }
 
   const section = document.querySelector(".ingredients-list");
-  const article = document.createElement("article");
 
   awaitAll(5, getRecipes)
     .then((results) => {
+      const article = document.createElement("article");
       article.innerHTML = results
         .map((recipe) => {
           if (recipe.thumbnail) {
-            ` <img src="${recipe.thumbnail}" alt="${recipe.name}" />
+            ` <img src="${recipe.thumbnail}" alt="${recipe.title}" />
             <p>${recipe.ingredients}</p>
             <h3>${recipe.title}</h3>`;
           }
@@ -41,6 +41,6 @@ function getIngredients() {
       console.log("asyncFinished", results);
     })
     .catch((e) => console.error(e));
-}
+// }
 
 // getIngredients();
