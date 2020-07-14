@@ -7,6 +7,7 @@ const getRecipes = () => {
   )
     .then((res) => res.json())
     .then((data) => {
+    console.log("hola", data);
       return data.results;
     })
 
@@ -24,24 +25,40 @@ function awaitAll(count, asyncFn) {
 
 const section = document.querySelector(".ingredients-list");
 
-awaitAll(5, getRecipes)
+awaitAll(10, getRecipes)
   .then((results) => {
-    const article = document.createElement("article");
-    results
-      .map((recipearray) => {
-    recipearray.map((recipe) => {
+    for (let i = 0; i < results.length; i++) {
+      results[i].forEach((recipe) => {
         if (recipe.thumbnail !== "") {
+          // console.log(recipe);
+          const article = document.createElement("article");
           article.innerHTML = `<h3>${recipe.title}</h3>
-          <img src="${recipe.thumbnail}" alt="${recipe.title}" />
-            <p>${recipe.ingredients}</p>`
+        <img src="${recipe.thumbnail}" alt="${recipe.title}" />
+          <p>${recipe.ingredients}</p>`;
+          section.appendChild(article);
         }
-    })
+      });
+      // for (let x = 0; x < results.length; x ++) {
+      //   if (results[i][x].thumbnail !== "") {
+      //  let recipe= results[i][x];
+      //     article.innerHTML = `<h3>${recipe.title}</h3>
+      //     <img src="${recipe.thumbnail}" alt="${recipe.title}" />
+      //       <p>${recipe.ingredients}</p>`
+      //   }
+      // }
+    }
+    // .join("");
+    // results
+    //   .map((recipearray) => {
+    // recipearray.map((recipe) => {
+    //     if (recipe.thumbnail !== "") {
 
-      })
-      .join("");
+    //     }
+    // })
 
-    section.appendChild(article);
-    console.log("asyncFinished", results);
+    // })
+
+    // console.log("asyncFinished", results);
   })
   .catch((e) => console.error(e));
 // }
