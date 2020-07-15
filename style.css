@@ -76,7 +76,6 @@ section {
   color: white;
   text-align: center;
   margin-top: 0px;
-  font-size: 40px;
 }
 
 h2,
@@ -85,35 +84,33 @@ h3 {
 }
 
 .container-section {
-  padding: 18px 40px 0px 40px;
-  height: 50px;
-  text-align: center;
-}
-
-.about-us {
-  background-color: #b4b6b32c;
-  padding: 40px;
-  text-align: center;
-}
-
-.container {
-  margin: 0px auto;
-  padding: 75px 0px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
 }
 
 #general-information {
   display: flex;
-  color: rgb(83, 80, 80);
-}
-
-#general-information .container {
-  display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  width: 240px;
+  padding: 40px;
+  text-align: center;
+  color: rgb(77, 72, 72);
+  background-color: #b4b6b32c;
+  }
+
+.about-us{
+  width: 50%;
 }
 
-@media screen and (max-width: 576px) {
+.new-class{
+padding: 10px 0px;
+}
+
+/* @media screen and (max-width: 576px) {
   h1 {
     width: 50%;
     text-align: center;
@@ -178,17 +175,15 @@ h3 {
     width: 240px;
     padding: 22px;
   }
-}
+} */
 
 .foot-design {
   background-color: #b8b973;
   color: white;
-  height: 180px;
   padding: 40px;
-  font-size: 22px;
+  font-size: 1rem;
   text-align: center;
 }
-
 
 /* SIGN IN STYLE */
 
@@ -362,7 +357,7 @@ footer {
 
 h4 {
   color: grey;
-  margin-top: 10px;;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -639,18 +634,14 @@ h3 {
 /* DASHBOARD STYLE IS HEREEEEE */
 
 .allsearchbar {
-box-sizing: border-box;
-background-color: rgb(172, 164, 164);
-margin: auto;
-padding: 5px;
-width: 80%;
-border-radius: 2%;
-margin-top: 50px;
-
-
-
+  box-sizing: border-box;
+  background-color: rgb(172, 164, 164);
+  margin: auto;
+  padding: 5px;
+  width: 80%;
+  border-radius: 2%;
+  margin-top: 50px;
 }
-
 
 .ingredient-text {
   padding-top: 170px;
@@ -707,8 +698,6 @@ margin-top: 50px;
   padding-top: 200px;
 }
 
-
-
 @media (min-width: 576px) {
   .ingredients-list article {
     /* font-size: 4rem;
@@ -718,7 +707,7 @@ margin-top: 50px;
   }
 
   .ingredients-list h3 {
-  font-size: 1rem;
+    font-size: 1rem;
   }
 
   .ingredients-list {
