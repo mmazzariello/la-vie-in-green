@@ -27,7 +27,7 @@ header nav {
   width: 90%;
   max-width: 1000px;
   margin: 20px auto;
-  background-color: #a2b290;
+  background-color: #b8b973;
 }
 
 .menu_bar {
@@ -146,7 +146,7 @@ h3 {
   .menu_bar .btn-menu {
     display: block;
     padding: 20px;
-    background: #a2b290;
+    background: #b8b973;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -181,7 +181,7 @@ h3 {
 }
 
 .foot-design {
-  background-color: #a2b290;
+  background-color: #b8b973;
   color: white;
   height: 180px;
   padding: 40px;
@@ -210,7 +210,7 @@ header nav {
   width: 90%;
   max-width: 1000px;
   margin: 20px auto;
-  background-color: #a2b290;
+  background-color: #b8b973;
 }
 
 .menu_bar {
@@ -270,7 +270,7 @@ section {
   .menu_bar .btn-menu {
     display: block;
     padding: 20px;
-    background: #a2b290;
+    background: #b8b973;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -298,7 +298,7 @@ section {
   flex-direction: column;
   align-items: center;
   width: 400px;
-  background-color: #a2b290;
+  background-color: #b8b973;
   padding: 30px;
   margin: auto;
   margin-top: 60px;
@@ -359,59 +359,9 @@ footer {
 
 /* LOGIN */
 
-body {
-  font-family: Montserrat;
-  background-color: #fffffa;
-}
-
-header {
-  width: 100%;
-}
-
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-header nav {
-  width: 90%;
-  max-width: 1000px;
-  margin: 20px auto;
-  background-color: #a2b290;
-}
-
-.menu_bar {
-  display: none;
-}
-
-header nav ul {
-  overflow: hidden;
-  list-style: none;
-}
-
-header nav ul li {
-  float: right;
-}
-
-header nav ul li a {
-  color: #fff;
-  padding: 20px;
-  display: block;
-  text-decoration: none;
-}
-
-header nav ul li span {
-  margin-right: 10px;
-}
-
-header nav ul li a:hover {
-  background-color: rgb(172, 204, 172);
-  text-decoration: none;
-}
-
-section {
-  padding: 20px;
+h4 {
+  color: grey;
+  margin-top: 10px;;
 }
 
 @media screen and (max-width: 768px) {
@@ -438,7 +388,7 @@ section {
   .menu_bar .btn-menu {
     display: block;
     padding: 20px;
-    background: #a2b290;
+    background: #b8b973;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -466,7 +416,7 @@ section {
   flex-direction: column;
   align-items: center;
   width: 400px;
-  background-color: #a2b290;
+  background-color: #rgb(131, 125, 125);
   padding: 30px;
   margin: auto;
   margin-top: 60px;
@@ -488,7 +438,7 @@ section {
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid #a2b290;
+  border: 1px solid #b8b973;
   font-size: 14px;
   color: rgb(131, 125, 125);
 }
@@ -499,18 +449,18 @@ section {
 }
 
 .form-login a {
-  color: white;
+  color: grey;
   text-decoration: none;
 }
 
-.fform-login a:hover {
-  color: white;
+.form-login a:hover {
+  color: grey;
   text-decoration: underline;
 }
 
 .form-login .botton {
   width: 100%;
-  background: rgb(131, 125, 125);
+  background: rgb(172, 169, 169);
   border: none;
   padding: 10px;
   margin-top: 1em;
@@ -518,16 +468,18 @@ section {
   font-size: 14px;
   margin-bottom: 1em;
   border-radius: 4px;
-  border: 1px solid #a2b290;
+  /* border: 1px solid #a2b290; */
 }
 
 .register {
   padding: 0px;
   margin: 0px;
+  color: grey;
+  font-size: 1em;
 }
 
-footer {
-  margin-top: 50px;
+.register a {
+  color: grey;
 }
 
 /* FAQ STYLE IS HERE!!!!!!!!!!!!!!!!!!!*/
@@ -551,7 +503,7 @@ header nav {
   width: 90%;
   max-width: 1000px;
   margin: 20px auto;
-  background-color: #a2b290;
+  background-color: #b8b973;
 }
 
 .menu_bar {
@@ -656,7 +608,7 @@ h3 {
   .menu_bar .btn-menu {
     display: block;
     padding: 20px;
-    background: #a2b290;
+    background: #b8b973;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -683,15 +635,6 @@ h3 {
   }
 }
 
-.foot-design {
-  background-color: #a2b290;
-  color: white;
-  height: 180px;
-  padding: 40px;
-  font-size: 22px;
-  text-align: center;
-}
-
 /* DASHBOARD STYLE IS HEREEEEE */
 
 .ingredient-text {
@@ -708,7 +651,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   width: 300px;
-  background-color: #a2b290;
+  background-color: #b8b973;
   padding: 30px;
   margin: auto;
   margin-top: 60px;
@@ -731,7 +674,7 @@ h3 {
 }
 
 .ingredients-list article {
-  background-color: #a2b290;
+  background-color: #b8b973;
   width: 300px;
   flex-direction: column;
   justify-content: center;
