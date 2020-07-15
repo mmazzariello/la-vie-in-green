@@ -299,7 +299,7 @@ section {
   flex-direction: column;
   align-items: center;
   width: 400px;
-  background-color: #b8b973;
+  background-color: #rgb(131, 125, 125);
   padding: 30px;
   margin: auto;
   margin-top: 60px;
@@ -314,6 +314,7 @@ section {
   font-size: 22px;
   margin-bottom: 20px;
   text-align: center;
+  color: #rgb(131, 125, 125);
 }
 
 .controls {
@@ -332,12 +333,12 @@ section {
 }
 
 .form-register a {
-  color: white;
+  color: grey;
   text-decoration: none;
 }
 
 .form-register a:hover {
-  color: white;
+  color: grey;
   text-decoration: underline;
 }
 
@@ -351,7 +352,6 @@ section {
   font-size: 14px;
   margin-bottom: 1em;
   border-radius: 4px;
-  border: 1px solid #a2b290;
 }
 
 footer {
@@ -638,14 +638,24 @@ h3 {
 
 /* DASHBOARD STYLE IS HEREEEEE */
 
+.allsearchbar {
+box-sizing: border-box;
+background-color: rgb(172, 164, 164);
+margin: auto;
+padding: 5px;
+width: 80%;
+border-radius: 2%;
+margin-top: 50px;
+
+
+
+}
+
+
 .ingredient-text {
   padding-top: 170px;
   text-align: center;
 }
-
-
-
-
 
 .ingredients-list {
   display: flex;

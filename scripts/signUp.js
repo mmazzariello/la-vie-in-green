@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 // form, inputs y message container
 
@@ -109,10 +109,10 @@ class Signup {
   };
 
   removeMessages = () => {
-    setTimeout (() => {
+    setTimeout(() => {
       this.errorsWrapper.innerHTML = "";
-    }, 3000)
-  }
+    }, 3000);
+  };
 
   setErrorMessages = () => {
     //vacia los errores para que no se sumen
@@ -130,13 +130,13 @@ class Signup {
       this.errorsWrapper.appendChild(errorMessageP);
     });
 
-    redirect = () => {
-      setTimeout(() => location.assign("login.html"), 2000)
-
+    const redirect = () => {
+      setTimeout(() => location.assign("login.html"), 2000);
+    };
   };
 }
 
 // Crear una nueva instancia del Signup (objeto)
 const signup = new Signup();
 
-window.addEventListener("load", signup.addListeners);
+signup.buttonInput.addEventListener("click", signup.submit);
