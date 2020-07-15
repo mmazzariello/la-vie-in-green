@@ -697,25 +697,7 @@ h3 {
   padding-top: 200px;
 }
 
-.search-nav {
-  width: 80%;
-  background-color:rgb(173, 170, 170);
-  border-radius: 2%;
-  padding: 5px;
-margin: auto;
-margin-top: 50px;
-}
 
-.search {
-  width: 80%;
-  border-color: rgb(173, 170, 170);
-}
-
-input[type="search"]{
-  border: none;
-  align-items: center;
-  border-radius: 2%;
-}
 
 @media (min-width: 576px) {
   .ingredients-list article {

@@ -31,7 +31,7 @@ function awaitAll(count, asyncFn) {
 
 const section = document.querySelector(".ingredients-list");
 
-awaitAll(10, getRecipes)
+awaitAll(2, getRecipes)
   .then((results) => {
     for (let i = 0; i < results.length; i++) {
       results[i].forEach((recipe) => {
@@ -49,3 +49,7 @@ awaitAll(10, getRecipes)
     }
   })
   .catch((e) => console.error(e));
+
+
+
+
