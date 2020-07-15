@@ -643,29 +643,9 @@ h3 {
   text-align: center;
 }
 
-.form-choose {
-  /* padding-bottom: 1px; */
-}
 
-.ingredient-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
-  background-color: #b8b973;
-  padding: 30px;
-  margin: auto;
-  margin-top: 60px;
-  margin-bottom: 1%;
-  border-radius: 4px;
-  font-size: 14px;
-  color: white;
-  box-shadow: 7px 13px 37px grey;
-}
 
-.ingredient-form label {
-  padding-bottom: 25px;
-}
+
 
 .ingredients-list {
   display: flex;
@@ -715,6 +695,26 @@ h3 {
   width: 100%;
   color: white;
   padding-top: 200px;
+}
+
+.search-nav {
+  width: 80%;
+  background-color:rgb(173, 170, 170);
+  border-radius: 2%;
+  padding: 5px;
+margin: auto;
+margin-top: 50px;
+}
+
+.search {
+  width: 80%;
+  border-color: rgb(173, 170, 170);
+}
+
+input[type="search"]{
+  border: none;
+  align-items: center;
+  border-radius: 2%;
 }
 
 @media (min-width: 576px) {
