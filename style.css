@@ -187,6 +187,68 @@ padding: 10px 0px;
 
 /* SIGN IN STYLE */
 
+.form-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(218, 212, 212);
+  margin: auto;
+  margin: 50px;
+  border-radius: 2%;
+  color: grey;
+  box-shadow: 7px 13px 37px rgb(191, 194, 191);
+}
+
+.form-register h4 {
+  text-align: center;
+  color: white;
+}
+
+.controls {
+  /* width: 100%; */
+  /* padding: 10px; */
+  border-radius: 2%;
+  /* margin-bottom: 16px; */
+  /* border: 1px solid rgb(218, 212, 212); */
+  /* font-size: 14px; */
+  /* color: rgb(131, 125, 125); */
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+}
+
+.form-register a {
+  color: grey;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.form-register .botton {
+  width: 100%;
+  background: rgb(131, 125, 125);
+  border: none;
+  padding: 10px;
+  margin-top: 1em;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 1em;
+  border-radius: 4px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+
+
+
+/* 
 body {
   font-family: Montserrat;
   background-color: #fffffa;
@@ -240,9 +302,9 @@ header nav ul li a:hover {
 
 section {
   padding: 20px;
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   header nav {
     width: 80%;
     height: 100%;
@@ -287,71 +349,8 @@ section {
   p {
     font-size: 1rem;
   }
-}
+} */
 
-.form-register {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 400px;
-  background-color: rgb(218, 212, 212);
-  padding: 30px;
-  margin: auto;
-  margin-top: 60px;
-  border-radius: 4px;
-  font-size: 14px;
-  color: grey;
-  font-weight: bold;
-  box-shadow: 7px 13px 37px grey;
-}
-
-.form-register h4 {
-  font-size: 22px;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #rgb(131, 125, 125);
-}
-
-.controls {
-  width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid rgb(218, 212, 212);
-  font-size: 14px;
-  color: rgb(131, 125, 125);
-}
-
-.form-register p {
-  height: 40px;
-  text-align: center;
-}
-
-.form-register a {
-  color: grey;
-  text-decoration: none;
-}
-
-.form-register a:hover {
-  color: grey;
-  text-decoration: underline;
-}
-
-.form-register .botton {
-  width: 100%;
-  background: rgb(131, 125, 125);
-  border: none;
-  padding: 10px;
-  margin-top: 1em;
-  color: white;
-  font-size: 14px;
-  margin-bottom: 1em;
-  border-radius: 4px;
-}
-
-footer {
-  margin-top: 50px;
-}
 
 /* LOGIN */
 

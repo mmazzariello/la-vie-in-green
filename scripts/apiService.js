@@ -8,10 +8,14 @@ const arr = [
 ];
 
 const getRecipes = () => {
+  const urlUsingHerokuCorsServer = "https://cors-anywhere.herokuapp.com";
+  const urlUsingLocalCorsServer = "http://localhost:8282";
+
+  // Replace the url below with the local or the remote heroku one if you want to run the 
+  // API using the local cors server or the remote cors server. 
+  //       👇
   return fetch(
-    `https://cors-anywhere.herokuapp.com/${
-      arr[Math.floor(Math.random() * arr.length)]
-    }`
+    `${urlUsingLocalCorsServer}/${arr[Math.floor(Math.random() * arr.length)]}`
   )
     .then((res) => res.json())
     .then((data) => {
@@ -49,7 +53,3 @@ awaitAll(2, getRecipes)
     }
   })
   .catch((e) => console.error(e));
-
-
-
-
