@@ -215,13 +215,11 @@ padding: 10px 0px;
 }
 
 .form-register p {
-  height: 40px;
   text-align: center;
 }
 
 .form-register a {
   color: grey;
-  text-decoration: none;
 }
 
 .form-register a:hover {
