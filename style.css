@@ -786,7 +786,7 @@ h3 {
   }
 
   .ingredients-list {
-    border: 2px solid yellow;
+    /* border: 2px solid rgb(175, 175, 174); */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

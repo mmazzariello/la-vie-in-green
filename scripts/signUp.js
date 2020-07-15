@@ -130,8 +130,8 @@ class Signup {
       this.errorsWrapper.appendChild(errorMessageP);
     });
 
-    // redirect = () => {
-    //   setTimeout(() => location.assign("login.html"), 2000)
+    redirect = () => {
+      setTimeout(() => location.assign("login.html"), 2000)
 
   };
 }
