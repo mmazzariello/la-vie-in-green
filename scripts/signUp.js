@@ -83,8 +83,7 @@ class Signup {
     this.emailInput.addEventListener("input", this.handleEmailInput);
     this.passwordInput.addEventListener("input", this.handlePasswordInput);
     this.repeatPasswordInput.addEventListener(
-      "input",
-      this.handleRepeatPasswordInput
+      "input",this.handleRepeatPasswordInput
     );
 
     this.buttonInput.addEventListener("click", this.saveData);
@@ -98,7 +97,7 @@ class Signup {
     //convertir el objeto a un array de strings
     const errorsStringsArr = Object.values(errorsObj);
 
-    if (errorsStringsArr.length > 0) {
+    if (errorsStringsArr.length > 1) {
       return;
     }
 
@@ -130,13 +129,13 @@ class Signup {
       this.errorsWrapper.appendChild(errorMessageP);
     });
 
-    const redirect = () => {
-      setTimeout(() => location.assign("login.html"), 2000);
-    };
+    //  redirect = () => {
+    //   setTimeout(() => location.assign("login.html"), 2000);
+    // };
   };
 }
 
 // Crear una nueva instancia del Signup (objeto)
 const signup = new Signup();
 
-signup.buttonInput.addEventListener("click", signup.submit);
+window.addEventListener("load", signup.addListeners);
