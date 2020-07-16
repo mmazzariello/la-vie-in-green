@@ -178,7 +178,7 @@ h3 {
 .form-register p {
   margin-top: 2%;
   text-align: center;
-  color: white;
+  /* color: white; */
 }
 
 .form-register a {
