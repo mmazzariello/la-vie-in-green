@@ -16,8 +16,8 @@ header {
 }
 
 header nav {
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
+  /* max-width: 1000px; */
   margin: 20px auto;
   background-color: #b8b973;
 }
@@ -277,7 +277,7 @@ h4 {
 /* FAQ STYLE IS HERE!!!!!!!!!!!!!!!!!!!*/
 
 header nav {
-  width: 80%;
+  width: 100%;
   height: 100%;
   margin: 0;
   position: fixed;
@@ -472,4 +472,13 @@ h3 {
 .faqII a {
   color: white;
   text-decoration: none;
+}
+
+
+/* Large - Media querie  */
+
+@media (min-width: 576px) { 
+  header nav {
+    width: 300px;
+  }
 }
