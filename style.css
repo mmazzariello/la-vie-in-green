@@ -478,7 +478,7 @@ h3 {
     float: right;
   }
 
-  h3 {
+  /* h3 {
     font-size: 20px;
   }
 
@@ -488,14 +488,14 @@ h3 {
 
   #faq-section3 {
     flex-direction: column;
-  }
+  } */
 }
 
 /* DASHBOARD STYLE IS HEREEEEE */
 
 .allsearchbar {
   box-sizing: border-box;
-  background-color: rgb(172, 164, 164);
+  background-color: #a2b290;
   margin: auto;
   padding: 5px;
   width: 80%;
@@ -516,7 +516,7 @@ h3 {
 }
 
 .ingredients-list article {
-  background-color: #b8b973;
+  background-color: #a2b290;
   width: 300px;
   flex-direction: column;
   justify-content: center;
