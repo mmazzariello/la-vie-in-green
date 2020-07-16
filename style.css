@@ -57,7 +57,7 @@ section {
 }
 
 .inicial-image {
-  background-image: url(../images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg);
+  background-image: url('/images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg');
   background-size: cover;
   height: 490px;
   width: 100%;
