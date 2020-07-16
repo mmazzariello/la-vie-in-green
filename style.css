@@ -96,23 +96,19 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* padding: 40px; */
   text-align: center;
   color: white;
-margin: 0px;
+  margin: 0px;
   background-color: white;
-  border: 2px solid red;
 }
 
 .about-us {
   width: 100%;
-  border: 2px solid yellow;
   background-color: #a2b290;
 }
 
 .new-class {
   padding: 10px 0px;
-  border: 2px solid violet;
 }
 
 .foot-design {
@@ -124,32 +120,31 @@ margin: 0px;
 }
 
 @media (min-width: 576px) {
-
   .about-us {
-    width: 70%;
-    border: 2px solid yellow;
+    width: 80%;
+  }
+
+  .new-class {
+    border: 2px solid red;
+    /* padding: 10px 0px; */
+    max-width: 80%;
   }
 }
 
 @media (min-width: 768px) {
-  
   .about-us {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* justify-content: flex-start ; */
     width: 100%;
-    border: 2px solid yellow;
   }
-  
+
   .new-class {
     max-width: 30%;
     padding: 10px 0px;
-    /* border: 2px solid violet; */
   }
-
 }
 
 @media (min-width: 992px) {
@@ -206,21 +201,17 @@ margin: 0px;
   border-radius: 2%;
 }
 
-
 @media (min-width: 576px) {
-  
   .form-register {
-  margin: 10% 20%;  
+    margin: 10% 20%;
   }
 }
 
 @media (min-width: 768px) {
-
 }
 
 @media (min-width: 992px) {
 }
-
 
 /* LOGIN */
 
@@ -274,8 +265,6 @@ h4 {
   margin-bottom: 3%;
   border-radius: 2%;
 }
-
-
 
 /* FAQ STYLE IS HERE!!!!!!!!!!!!!!!!!!!*/
 
@@ -346,22 +335,16 @@ h3 {
   color: white;
 }
 
-
 .faq-answers {
   padding: 30px;
   margin: 30px;
 }
 
-
 @media (min-width: 576px) {
-
-/* sin query por ahora */
-
+  /* sin query por ahora */
 }
 
-
 @media (min-width: 768px) {
-
   #faq-section3 {
     display: flex;
     flex-wrap: wrap;
@@ -370,11 +353,10 @@ h3 {
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-}
+  }
 }
 
 @media (min-width: 992px) {
-
   #faq-section3 {
     display: flex;
     flex-wrap: wrap;
@@ -383,11 +365,8 @@ h3 {
     align-items: center;
     justify-content: center;
     justify-content: space-around;
+  }
 }
-}
-
-
-
 
 /* DASHBOARD STYLE IS HEREEEEE */
 
