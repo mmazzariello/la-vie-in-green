@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-
 body {
   font-family: Montserrat;
   background-color: #fffffa;
@@ -57,7 +56,7 @@ section {
 }
 
 .inicial-image {
-  background-image: url('/images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg');
+  background-image: url("./images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg");
   background-size: cover;
   height: 490px;
   width: 100%;
@@ -153,12 +152,21 @@ h3 {
 
 /* SIGN IN STYLE */
 
+.container-form{
+  display: flex;
+  justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .form-register {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   background-color: #a2b290;
-  margin: 50px;
+  width: 400px;
   border-radius: 2%;
   color: white;
   box-shadow: 7px 13px 37px rgb(191, 194, 191);
@@ -205,12 +213,10 @@ h3 {
 }
 
 @media (min-width: 576px) {
-
 }
 
 @media (min-width: 768px) {
-  }
-
+}
 
 @media (min-width: 992px) {
 }
@@ -308,7 +314,7 @@ header nav ul li {
 }
 
 .inicial-faq-image {
-  background-image: url(images/katka-pavlickova-_v1wbPxLTT8-unsplash.jpg);
+  background-image: url("./images/katka-pavlickova-_v1wbPxLTT8-unsplash.jpg");
   background-size: cover;
   height: 490px;
   width: 100%;
@@ -429,7 +435,7 @@ h3 {
 }
 
 .dashboard-image {
-  background-image: url('images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg');
+  background-image: url("images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg");
   background-size: cover;
   height: 490px;
   width: 100%;
@@ -456,8 +462,14 @@ h3 {
 }
 
 @media (min-width: 768px) {
-
 }
 
 @media (min-width: 992px) {
+}
+
+/* FAQ II STYLE */
+
+.faqII a {
+  color: white;
+  text-decoration: none;
 }
