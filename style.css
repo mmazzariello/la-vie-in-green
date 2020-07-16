@@ -96,19 +96,23 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
+  /* padding: 40px; */
   text-align: center;
   color: white;
-  margin: 2%;;
-  background-color: #a2b290;
+margin: 0px;
+  background-color: white;
+  border: 2px solid red;
 }
 
 .about-us {
-  width: 50%;
+  width: 100%;
+  border: 2px solid yellow;
+  background-color: #a2b290;
 }
 
 .new-class {
   padding: 10px 0px;
+  border: 2px solid violet;
 }
 
 .foot-design {
@@ -120,11 +124,32 @@ h3 {
 }
 
 @media (min-width: 576px) {
-  //sin cambios
+
+  .about-us {
+    width: 70%;
+    border: 2px solid yellow;
+  }
 }
 
 @media (min-width: 768px) {
   
+  .about-us {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* justify-content: flex-start ; */
+    width: 100%;
+    border: 2px solid yellow;
+  }
+  
+  .new-class {
+    max-width: 30%;
+    padding: 10px 0px;
+    /* border: 2px solid violet; */
+  }
+
 }
 
 @media (min-width: 992px) {
