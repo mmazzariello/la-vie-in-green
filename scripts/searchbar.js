@@ -10,7 +10,7 @@ const getRecipesByIngredients = () => {
   // API using the local cors server or the remote cors server. 
   //       👇
   return fetch(
-    `${urlUsingLocalCorsServer}/http://www.recipepuppy.com/api/?i=${searchTerm}`
+    `${urlUsingHerokuCorsServer}/http://www.recipepuppy.com/api/?i=${searchTerm}`
   )
     .then((res) => res.json())
     .then((data) => {
