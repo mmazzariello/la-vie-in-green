@@ -100,14 +100,14 @@ h3 {
   text-align: center;
   color: rgb(77, 72, 72);
   background-color: #b4b6b32c;
-  }
+}
 
-.about-us{
+.about-us {
   width: 50%;
 }
 
-.new-class{
-padding: 10px 0px;
+.new-class {
+  padding: 10px 0px;
 }
 
 /* @media screen and (max-width: 576px) {
@@ -286,7 +286,6 @@ padding: 10px 0px;
   }
 } */
 
-
 /* LOGIN */
 
 h4 {
@@ -351,7 +350,6 @@ h4 {
   color: grey;
 } */
 
-
 /* 
 @media screen and (max-width: 768px) {
   header nav {
@@ -400,7 +398,6 @@ h4 {
   }
 } */
 
-
 /* FAQ STYLE IS HERE!!!!!!!!!!!!!!!!!!!*/
 
 .inicial-faq-image {
@@ -417,40 +414,30 @@ h3 {
   font-weight: bold;
 }
 
-.faq-section h2 {
-  padding: 18px 40px 0px 40px;
-  height: 50px;
+.faq-section {
   text-align: center;
-  color: rgb(83, 80, 80);
+  padding-bottom: 1%;
 }
 
 #faq-section3 {
+  background-color: #a2b290;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-#faq-section3 .contain {
-  width: 370px;
   text-align: center;
-}
-
-.faq-answers {
-  background-color: #a2b290;
-  padding: 30px;
-  margin: 30px;
+  margin: 3%;
   color: white;
 }
 
-
-
+.faq-answers {
+  padding: 30px;
+  margin: 30px;
+}
 
 @media screen and (max-width: 576px) {
-
   #faq-section3 {
     flex-direction: column;
   }
-
 }
 
 @media screen and (max-width: 768px) {
