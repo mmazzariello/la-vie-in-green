@@ -109,6 +109,15 @@ h3 {
 
 .new-class {
   padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-class p {
+  width: 90%;
+  text-align: center;
 }
 
 .foot-design {
@@ -126,8 +135,11 @@ h3 {
 
   .new-class {
     border: 2px solid red;
-    /* padding: 10px 0px; */
-    max-width: 80%;
+  }
+
+  .new-class p {
+    width: 80%;
+    text-align: center;
   }
 }
 
@@ -202,7 +214,6 @@ h3 {
 }
 
 @media (min-width: 576px) {
-
 }
 
 @media (min-width: 768px) {
