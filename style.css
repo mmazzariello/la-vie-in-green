@@ -98,8 +98,9 @@ h3 {
   align-items: center;
   padding: 40px;
   text-align: center;
-  color: rgb(77, 72, 72);
-  background-color: #b4b6b32c;
+  color: white;
+  margin: 2%;;
+  background-color: #a2b290;
 }
 
 .about-us {
@@ -135,11 +136,11 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(218, 212, 212);
+  background-color: #a2b290;
   margin: auto;
   margin: 50px;
   border-radius: 2%;
-  color: grey;
+  color: white;
   box-shadow: 7px 13px 37px rgb(191, 194, 191);
 }
 
@@ -157,7 +158,7 @@ h3 {
 }
 
 .form-register a {
-  color: grey;
+  color: white;
   text-decoration: none;
 }
 
@@ -207,11 +208,11 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(218, 212, 212);
+  background-color: #a2b290;
   margin: auto;
   margin: 50px;
   border-radius: 2%;
-  color: grey;
+  color: white;
   box-shadow: 7px 13px 37px rgb(191, 194, 191);
 }
 
@@ -226,12 +227,12 @@ h4 {
 }
 
 .form-login a {
-  color: grey;
+  color: white;
   text-decoration: none;
 }
 
 .form-login a:hover {
-  color: grey;
+  color: white;
   text-decoration: underline;
 }
 
@@ -289,7 +290,6 @@ header nav ul li {
 .menu_bar span {
   float: right;
 }
-
 
 .inicial-faq-image {
   background-image: url(images/katka-pavlickova-_v1wbPxLTT8-unsplash.jpg);
