@@ -83,7 +83,8 @@ class Signup {
     this.emailInput.addEventListener("input", this.handleEmailInput);
     this.passwordInput.addEventListener("input", this.handlePasswordInput);
     this.repeatPasswordInput.addEventListener(
-      "input",this.handleRepeatPasswordInput
+      "input",
+      this.handleRepeatPasswordInput
     );
 
     this.buttonInput.addEventListener("click", this.saveData);
@@ -129,9 +130,9 @@ class Signup {
       this.errorsWrapper.appendChild(errorMessageP);
     });
 
-    //  redirect = () => {
-    //   setTimeout(() => location.assign("login.html"), 2000);
-    // };
+    redirect = () => {
+      setTimeout(() => location.assign("login.html"), 2000);
+    };
   };
 }
 
