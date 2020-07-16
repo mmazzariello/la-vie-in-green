@@ -202,9 +202,7 @@ h3 {
 }
 
 @media (min-width: 576px) {
-  .form-register {
-    margin: 10% 20%;
-  }
+
 }
 
 @media (min-width: 768px) {
