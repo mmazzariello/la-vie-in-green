@@ -82,6 +82,10 @@ h3 {
   margin-bottom: 0px;
 }
 
+.container-section p{
+  text-align: center;
+}
+
 #general-information {
   display: flex;
   flex-direction: column;
@@ -91,6 +95,7 @@ h3 {
   color: white;
   margin: 0px;
   background-color: white;
+  font-size: 1rem;
 }
 
 .about-us {
@@ -109,7 +114,10 @@ h3 {
 .new-class p {
   width: 90%;
   text-align: center;
+  font-size: 0.9rem;
 }
+
+
 
 .foot-design {
   background-color: #b8b973;
@@ -457,7 +465,7 @@ h3 {
 }
 
 @media (min-width: 576px) {
-  
+
   .ingredients-list article {
   }
 
@@ -511,6 +519,22 @@ h3 {
 
 .contain-answers p {
   text-align: center;
+  font-size: 0.9rem;;
+}
+
+.contain-answers h4 {
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+
+.back-button{
+  float: left;
+  display: flex;
+  align-items: initial;
+  /* display: block; */
+  text-decoration: none;
+  color: white;
 }
 
 @media (min-width: 576px) {
