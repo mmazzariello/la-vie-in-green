@@ -17,7 +17,6 @@ header {
 
 header nav {
   width: 100%;
-  /* max-width: 1000px; */
   margin: 20px auto;
   background-color: #b8b973;
 }
@@ -120,6 +119,11 @@ h3 {
   text-align: center;
 }
 
+.message-container p {
+  color: rgb(211, 29, 53);
+  font-size: 1rem;
+}
+
 @media (min-width: 576px) {
   .about-us {
     width: 80%;
@@ -199,14 +203,14 @@ h3 {
 
 .form-register .botton {
   width: 100%;
-  background: rgb(131, 125, 125);
+  background: rgb(241, 239, 239);
+  color: #3f3f26;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   padding: 10px;
   margin-top: 2%;
-  color: white;
   margin-bottom: 3%;
   border-radius: 2%;
 }
@@ -268,7 +272,8 @@ h4 {
 
 .form-login .botton {
   width: 100%;
-  background: rgb(131, 125, 125);
+  background: rgb(241, 239, 239);
+  color: #3f3f26;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -433,11 +438,13 @@ h3 {
 
 .ingredients-list p {
   font-size: 0.9rem;
+  padding-top: 10px;
 }
 
 .ingredients-list h3 {
   align-items: center;
-  font-weight: bold;
+  font-size: 1rem;
+  padding-top: 10px;
 }
 
 .dashboard-image {
@@ -450,11 +457,8 @@ h3 {
 }
 
 @media (min-width: 576px) {
+  
   .ingredients-list article {
-  }
-
-  .ingredients-list h3 {
-    font-size: 1rem;
   }
 
   .ingredients-list {
@@ -510,8 +514,7 @@ h3 {
 }
 
 @media (min-width: 576px) {
-
-  .all-answers{
+  .all-answers {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
