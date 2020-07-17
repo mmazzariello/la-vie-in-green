@@ -103,7 +103,7 @@ class Signup {
     }
 
     const successMessageP = document.createElement("p");
-    successMessageP.innerHTML = "The account has been created successfully";
+    successMessageP.innerHTML = "The account has been created successfully, Login!";
 
     this.errorsWrapper.appendChild(successMessageP);
   };
@@ -128,11 +128,12 @@ class Signup {
       errorMessageP.innerHTML = errorStr;
 
       this.errorsWrapper.appendChild(errorMessageP);
+
     });
 
-    redirect = () => {
-      setTimeout(() => location.assign("login.html"), 2000);
-    };
+    // redirect = () => {
+    //   setTimeout(() => location.assign("login.html"), 2000);
+    // };
   };
 }
 
