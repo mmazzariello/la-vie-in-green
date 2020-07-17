@@ -117,8 +117,6 @@ h3 {
   font-size: 0.9rem;
 }
 
-
-
 .foot-design {
   background-color: #b8b973;
   color: white;
@@ -149,7 +147,7 @@ h3 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
   }
 
