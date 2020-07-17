@@ -1,6 +1,6 @@
 # La vie in green
 
-La vie in green is an informal community-focused website offers healthy and delicious food inspired by plant-based food.
+La vie in green is an informal community-focused website offering delicious and healthy food inspired by organizing people's nutrition.
 
 ***La vie in green*** was developed using JavaScript as part of the [Ironhack](https://www.ironhack.com/) developer bootcamp (WebDev-FT-062020) using the RecipePuppy API.
 
@@ -12,10 +12,10 @@ The **MVP** will cover the following:
 - **La vie in green:** A user will be able to search the database for creative recipe ideas.
 - **Signup:** A registration form for new users.
 - **Login:** A sign in form for existing users. 
+- FAQ
 
 ## Backlog
 
-- FAQ
 - Regex: More validations, Pop up in the Login. 
 - Login: Forgot my password, send email, reset.
 
@@ -29,17 +29,21 @@ The **MVP** will cover the following:
 
 - index.html
 - login.html
-- signin.html
+- signup.html
 - dashboard.html
+- faq.html
+- faqII.html
 - **css/**
   - style.css
 - **scripts/**
   - apiService.js
+  - Searcher.js
   - database.js
   - login.js
-  - signIn.js
+  - signup.js
   - user.js
-  - Validator.js
+  - validator.js
+  - menu.js
 - **assets/**
   - images/
   - fonts/
@@ -66,3 +70,4 @@ RecipePuppy API
 
 -----
 
+[Google Slides](https://docs.google.com/presentation/d/1QgvGrnGYAtUA7jSYBCZUJpKBPmdTnC0lTaTV7zYNwK4/edit?usp=sharing)
