@@ -68,6 +68,7 @@ RecipePuppy API
 
 ### Slides
 
+[Google Slides](https://docs.google.com/presentation/d/1QgvGrnGYAtUA7jSYBCZUJpKBPmdTnC0lTaTV7zYNwK4/edit?usp=sharing)
+
 -----
 
-[Google Slides](https://docs.google.com/presentation/d/1QgvGrnGYAtUA7jSYBCZUJpKBPmdTnC0lTaTV7zYNwK4/edit?usp=sharing)
