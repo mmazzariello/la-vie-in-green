@@ -75,46 +75,50 @@ h3 {
 }
 
 .container-section {
-  padding: 15px;
+  padding: 5% 18% 0% 18%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container-section p {
+  text-align: center;
   margin-bottom: 0px;
 }
 
-.container-section p{
-  text-align: center;
+.container-homepage {
+  /* border: 2px solid blue; */
+  padding: 3%;
+  background-color: #a2b290;
+  margin: 4%;
 }
 
-#general-information {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
+.home-font {
+  font-weight: bold;
+  font-size: 1.2rem;
   color: white;
-  margin: 0px;
-  background-color: white;
-  font-size: 1rem;
+}
+
+.home-p {
+  color: white;
 }
 
 .about-us {
-  width: 100%;
-  background-color: #a2b290;
-}
-
-.new-class {
-  padding: 10px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.new-class p {
-  width: 90%;
+  /* border: 2px solid yellow; */
   text-align: center;
-  font-size: 0.9rem;
+  padding: 0% 10%;
+}
+
+.container-taste {
+  /* border: 2px solid pink; */
+  text-align: center;
+  padding: 3%;
+}
+
+.container-join {
+  /* border: 2px solid red; */
+  text-align: center;
+  padding: 0% 18%;
 }
 
 .foot-design {
@@ -128,6 +132,9 @@ h3 {
 .message-container p {
   color: rgb(211, 29, 53);
   font-size: 1rem;
+  text-align: center;
+  padding: 0% 10%;
+  font-size: 0.9rem;
 }
 
 @media (min-width: 576px) {
@@ -163,38 +170,48 @@ h3 {
 /* SIGN IN STYLE */
 
 .container-form {
+  /* border: 2px solid red; */
+  padding: 9% 6% 2% 6%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  /* padding-bottom: 0%; */
 }
 
 .form-register {
+  /* border: 2px solid blue; */
+  padding: 5%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   background-color: #a2b290;
-  width: 400px;
   border-radius: 2%;
   color: white;
   box-shadow: 7px 13px 37px rgb(191, 194, 191);
+  padding-bottom: 8%;
 }
 
-.controls {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+.form-register input {
+  /* border: 2px solid yellow; */
+  padding: 1.5%;
   border-radius: 2%;
-  border: 1px solid rgb(218, 212, 212);
-  color: rgb(131, 125, 125);
+  border: none;
+  border-radius: 3%;
 }
 
 .form-register p {
+  /* border: 2px solid violet; */
+  font-size: 14px;
   margin-top: 2%;
   text-align: center;
+}
+
+.form-register label {
+  /* border: 2px solid violet; */
+  font-size: 14px;
+  margin-bottom: 6%;
 }
 
 .form-register a {
@@ -207,87 +224,68 @@ h3 {
   text-decoration: underline;
 }
 
-.form-register .botton {
+.container-button {
+  /* border: 2px solid pink; */
   width: 100%;
-  background: rgb(241, 239, 239);
-  color: #3f3f26;
   display: flex;
-  align-items: center;
   justify-content: center;
+  padding: 2%;
+  margin-top: 6%;
+}
+
+.container-inputs {
+  /* border: 2px solid red; */
+  padding: 2%;
+}
+
+.container-labels {
+  /* border: 2px solid blueviolet; */
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 6%;
+}
+
+.container-button input {
+  /* border: 2px solid blueviolet; */
+  padding: 4%;
   border: none;
-  padding: 10px;
-  margin-top: 2%;
-  margin-bottom: 3%;
-  border-radius: 2%;
+  font-size: 13px;
 }
 
-@media (min-width: 576px) {
+.sign-input {
+  border: 2px solid blueviolet;
 }
 
-@media (min-width: 768px) {
-}
-
-@media (min-width: 992px) {
-}
-
-/* LOGIN */
-
-h4 {
-  color: grey;
-  margin-top: 10px;
-}
-
-.form-login {
+.container-account {
+  /* border: 2px solid green; */
+  padding: 2%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
-  background-color: #a2b290;
-  width: 400px;
-  border-radius: 2%;
-  color: white;
-  box-shadow: 7px 13px 37px rgb(191, 194, 191);
+  margin-top: 3%;
+  margin-bottom: 0%;
 }
 
-.container-login {
+.question-login {
+  /* border: 2px solid violet; */
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
 
-.form-login h4 {
-  text-align: center;
-  color: white;
-}
-
-.form-login p {
-  height: 40px;
-  text-align: center;
-}
-
-.form-login a {
-  color: white;
-  text-decoration: none;
-}
-
-.form-login a:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-.form-login .botton {
-  width: 100%;
-  background: rgb(241, 239, 239);
-  color: #3f3f26;
+.a-login {
+  /* border: 2px solid red; */
   display: flex;
-  align-items: center;
   justify-content: center;
-  border: none;
-  padding: 10px;
-  margin-top: 2%;
-  margin-bottom: 3%;
-  border-radius: 2%;
+}
+
+.a-login a {
+  color: black;
+}
+
+.container-account p {
+  font-size: 12px;
 }
 
 /* FAQ STYLE IS HERE!!!!!!!!!!!!!!!!!!!*/
@@ -346,26 +344,6 @@ h3 {
 .faq-section {
   text-align: center;
   padding-bottom: 1%;
-}
-
-#faq-section3 {
-  background-color: #a2b290;
-  flex-direction: column;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  margin: 3%;
-  color: white;
-}
-
-.faq-answers {
-  padding: 30px;
-  margin: 30px;
-}
-
-@media (min-width: 576px) {
-  /* sin query por ahora */
 }
 
 @media (min-width: 768px) {
@@ -462,10 +440,6 @@ h3 {
 }
 
 @media (min-width: 576px) {
-
-  .ingredients-list article {
-  }
-
   .ingredients-list {
     display: flex;
     flex-wrap: wrap;
@@ -485,7 +459,7 @@ h3 {
 /* FAQ II STYLE */
 
 .faqII a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -500,10 +474,32 @@ h3 {
 /* FAQ ANSWERS */
 
 #faq-section3 {
+  border: 2px solid fuchsia;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.container-faq-questions {
+  border: 2px solid fuchsia;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contain {
+  border: 2px solid red;
+  text-align: center;
+  margin: 2% 0%;
+  display: flex;
+  width: 100%;
+  background-color: #a2b290;
+  color: white;
+  border-radius: 2%;
+  padding: 0% 6%;
+  /* align-items: center; */
 }
 
 .contain-answers {
@@ -516,7 +512,7 @@ h3 {
 
 .contain-answers p {
   text-align: center;
-  font-size: 0.9rem;;
+  font-size: 0.9rem;
 }
 
 .contain-answers h4 {
@@ -525,7 +521,7 @@ h3 {
   font-weight: bolder;
 }
 
-.back-button{
+.back-button {
   float: left;
   display: flex;
   align-items: initial;

@@ -40,55 +40,55 @@
       </header>
 
       <!-- SECTION 1 -->
-      <section class="container-form">
-        <section class="form-register">
-          <p>SIGN UP</p>
+      <div class="container-form">
+        <!-- <p>SIGN UP</p> -->
 
+        <div class="form-register">
           <form action="">
-            <label for="email">Email:</label>
-            <input
-              class="controls"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Type your email"
-            /><br /><br />
+            <div class="container-inputs">
+              <div class="container-labels">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" />
+              </div>
 
-            <label for="password">Password:</label>
-            <input
-              class="controls"
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Type your password"
-            /><br /><br />
+              <div class="container-labels">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" />
+              </div>
 
-            <label for="password">Repeat Password:</label>
-            <input
-              class="controls"
-              type="password"
-              id="repeat-password"
-              name="password"
-              placeholder="Repeat password"
-            /><br /><br />
+              <div class="container-labels">
+                <label for="password">Repeat Password:</label>
+                <input type="password" id="repeat-password" name="password" />
+              </div>
+            </div>
 
-            <input
-              class="botton"
-              type="submit"
-              id="signup-button"
-              value="Register"
-            />
-
-            <p>Do you have an account?</p>
-            <p><a href="login.html">Login</a></p>
+            <div class="container-button">
+              <input
+                class="sign-input"
+                type="submit"
+                id="signup-button"
+                value="Register"
+              />
+            </div>
           </form>
-          <div class="message-container"></div>
-        </section>
-      </section>
+        </div>
+
+        <div class="container-account">
+          <div class="question-login">
+            <p>Do you have an account?</p>
+          </div>
+          <div class="a-login">
+            <p><a href="login.html">Login</a></p>
+          </div>
+        </div>
+
+        <div class="message-container"></div>
+      </div>
+
       <!-- FOOTER -->
 
       <footer class="foot-design">
-        <h3>la vie in green</h3>
+        <h5>la vie in green</h5>
         <span class="icon-instagram"></span>
         <span class="icon-facebook"></span>
       </footer>

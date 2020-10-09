@@ -40,49 +40,43 @@
       </header>
 
       <!-- SECTION 1 -->
+      <div class="container-form">
+        <div class="form-register">
+          <form action="/action_page.php" method="get">
+            <div class="container-inputs">
+              <div class="container-labels">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" />
+              </div>
 
-      <section class= "container-login">
-      <section class="form-login">
-        <p>LOG IN</p>
+              <div class="container-labels">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" />
+              </div>
 
-        <div>
-        <form action="/action_page.php" method="get">
-          <label for="email">Email:</label>
-          <input
-            class="controls"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Type your email"
-          /><br /><br />
+              <div class="container-button">
+                <input type="submit" id="login-button" value="Log In" />
+              </div>
+            </div>
+          </form>
+        </div>
 
-          <label for="password">Password:</label>
-          <input
-            class="controls"
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Type your password"
-          /><br /><br />
+        <div class="container-account">
+          <div class="question-login">
+            <p>Are you not registered?</p>
+          </div>
 
-          <input
-            class="botton"
-            type="submit"
-            id="login-button"
-            value="Log In"
-          />
+          <div class="a-login">
+            <p><a href="signUp.html">Sign Up</a></p>
+          </div>
+        </div>
 
-          <p>Are you not registered?</p>
-          <p><a href="signUp.html">Sign Up</a></p>
-        </form>
         <div class="message-container"></div>
-      </section>
-    </section>
-
+      </div>
       <!-- FOOTER -->
 
       <footer class="foot-design">
-        <h3>la vie in green</h3>
+        <h5>la vie in green</h5>
         <span class="icon-instagram"></span>
         <span class="icon-facebook"></span>
       </footer>
