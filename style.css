@@ -89,8 +89,13 @@ h3 {
 }
 
 .homepage {
-  /* border: solid 2px red; */
+  border: solid 2px red;
   margin: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: initial;
+  justify-content: center;
 }
 
 .home-container {
@@ -98,8 +103,10 @@ h3 {
   text-align: center;
   color: white;
   background-color: #a2b290;
-  margin-top: 2%;
+  margin: 2%;
   padding: 2% 3% 2% 3%;
+  height: 15%;
+  width: 100%;
 }
 
 /* FOOTER */
@@ -497,28 +504,8 @@ h3 {
 /* HOME PAGE MEDIA QUERY */
 
 @media (min-width: 576px) {
-  .about-us {
-    width: 80%;
-  }
-
-  .new-class p {
-    width: 80%;
-    text-align: center;
-  }
-}
-
-@media (min-width: 768px) {
-  .about-us {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  .new-class {
-    max-width: 30%;
-    padding: 10px 0px;
+  .home-container {
+    max-width: 20%;
+    padding: 15px;
   }
 }
